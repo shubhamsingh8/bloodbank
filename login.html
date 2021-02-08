@@ -1,0 +1,100 @@
+<html>
+<head>
+<title> welcome to ballu randhawa's donor bank </title>
+
+ <link rel="stylesheet" href="style.css" type="text/css">
+
+<script>
+function DOLOGIN()
+{
+	var name=document.forms["loginform"]["uname"];
+	var passwrd=document.forms["loginform"]["pass"];
+	
+	if(name.value=="")
+	{
+		window.alert("please enter username.")
+
+	}
+	
+	if(passwrd.value=="")
+	{
+		window.alert("please enter password.")
+		
+	}
+	
+}
+
+</script>
+</head>
+
+<body>
+<div id="container">
+
+
+<p>
+  RANDHAWA'S DONOR BANK  
+
+</p>
+</div>
+
+<ul>
+
+<li><a href="home.html"> Home</a></li>
+<li><a href="doctors.html">Doctors</a></li>
+<li><a href="donorinfo.html">DonorInfo</a> </li>
+<li><a href="availabledata.html">Available Data</a></li>
+<li><a href="contactus.html">Contact us</a></li>
+</ul>
+
+
+
+
+<div id="matter">
+
+<div class="left">
+<h1> WELCOME</h1>
+
+<br>
+<button class="button button2"><a href="visitor.html">Visitor</a></button>
+<br>
+<button class="button button3"><a href="login.html">Member </a></button>
+<br>
+</div>
+
+
+
+<div class="right">
+<div class="login">
+<center>
+<h1> <B>
+Dear Member,	Our Bank Welcome's You</B>
+</h1>
+<hr>
+
+<BR>
+<form name="loginform" action="#" onsubmit="return DOLOGIN()">
+   <label><b>Username</b></label>
+   <input type="text" placeholder="Enter Username" name="uname" >
+<br>
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pass" >
+ <br>   
+<input type="checkbox" checked="checked"> Remember me 
+<br>
+<input type="submit" value="Login" name="submit">
+
+ </center>
+   <br>
+ 
+<hr>
+</div>
+</div>
+
+
+</div>
+<center>
+&copy; Balraj, sahil bhatia, shubham singh.
+</center>
+
+</body>
+</html>
